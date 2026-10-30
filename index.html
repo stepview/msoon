@@ -390,6 +390,9 @@ body.has-ann.loaded header.top.hide{transform:translateY(calc(-100% - 44px))}
   .sym{scroll-snap-align:start;width:72vw}.sym.intro-card{width:72vw;padding-inline-end:0}
   .railbar{display:none}
   .about .pic{aspect-ratio:4/4}
+  footer nav a,.past-note a{position:relative}
+  footer nav a::after,.past-note a::after{content:"";position:absolute;left:50%;top:50%;width:max(100%,44px);height:max(100%,44px);transform:translate(-50%,-50%)}
+  footer{padding-bottom:90px}
 }
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
